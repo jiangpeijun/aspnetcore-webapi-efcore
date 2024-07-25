@@ -21,6 +21,7 @@
 - [x] 项目 中Connected Services的 SQL Server 数据库连接 配置参数
 - [ ] 连接字符串名称 ConnectionStrings:SqlServer
 - [ ] 连接字符串值 Data Source=DESKTOP-IO34AG5;Initial Catalog=Employees;Integrated Security=True;Trust Server Certificate=True
+- [x] postman访问 https://localhost:7236/api/Employee
   
 
 
