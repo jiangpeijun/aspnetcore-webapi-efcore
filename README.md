@@ -1,40 +1,29 @@
-1、git clone
-2、下载 SSMS
-https://learn.microsoft.com/zh-cn/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16&source=recommendations#download-ssms
-3、配置 SSMS
-① 连接对象资源管理器
-服务器类型：数据库引擎
-服务器名称：DESKTOP-IO34AG5
-身份验证：Window 身份验证
-加密：强制
-勾选 信任服务器证书
-
-
 # efcore
 💡**声明**
-- 此项目只发布于 GitHub，基于 MIT 协议，免费且作为开源学习使用。并且不会有任何形式的卖号、付费服务、讨论群、讨论组等行为。谨防受骗。
-- 本开源是在 [ChenZhaoYu](https://github.com/Chanzhaoyu/chatgpt-web) 基础上做二次开发 ；使用 [midjourney-proxy](https://github.com/novicezk/midjourney-proxy) 提供的midjourney api和 [Suno-API](https://github.com/SunoAI-API/Suno-API)  作为后端而形成的；
 
 
 ![cover](./docs/mj2a1.jpg)
-## 支持功能 
+## 步骤 
 - [x] git clone
 - [x] 下载 SSMS
-- [ ] https://learn.microsoft.com/zh-cn/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16&source=recommendations#download-ssms
+- - [ ] https://learn.microsoft.com/zh-cn/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16&source=recommendations#download-ssms
 - [x] 配置 SSMS
 - [ ] 连接对象资源管理器
-- [ ] 服务器类型：数据库引擎
-- [ ] 服务器名称：DESKTOP-IO34AG5
-- [ ] 身份验证：Window 身份验证
-- [ ] 加密：强制
-- [ ] 勾选 信任服务器证书
+- - [ ] 服务器类型：数据库引擎
+- - [ ] 服务器名称：DESKTOP-IO34AG5
+- - [ ] 身份验证：Window 身份验证
+- - [ ] 加密：强制
+- - [ ] 勾选 信任服务器证书
+- [x] SSMS 中新建数据库 Employees，新建 employee，并设置 Id，Name，LastName，Title
+- [x] 项目 中Connected Services的 Secrets.json
+      {"ConnectionStrings:SqlServer": "Data Source=DESKTOP-IO34AG5;Initial Catalog=Employees;Integrated Security=True;Trust Server Certificate=True"}
+- [x] 项目 中Connected Services的 SQL Server 数据库连接 选择 SQL Server 数据库（本地 SQL Server 数据库）
+- [x] 项目 中Connected Services的 SQL Server 数据库连接 配置参数
+- [ ] 连接字符串名称 ConnectionStrings:SqlServer
+- [ ] 连接字符串值 Data Source=DESKTOP-IO34AG5;Initial Catalog=Employees;Integrated Security=True;Trust Server Certificate=True
+  
 
 
-## 无服务器-个人桌面安装
-> - [x] 请到 https://github.com/Dooy/chatgpt-web-midjourney-proxy/releases 下载最新版本安装(选择合适你操作系统的版本)
-> - [x] 选择一个合适的中转服务商( 最好都支持 `gpt`, `gpts`, `midjourney`, `claude`, `suno` )
-> - [x] 中转服务商推荐 https://www.openai-hk.com 一个`key`和`api接口地址` 同时支持 `gpt` `midjourney` `claude` `suno`，mj-fast最低能到0.12rmb/张
-![多模态](./docs/suno-ds.jpg)
 
 ## Vercel 一键部署
 
